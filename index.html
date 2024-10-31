@@ -5,36 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Portfolio</title>
 </head>
 
 <body>
     <header>
-        <h1>My portfolio</h1>
-        <nav>
-            <a href="">About Me</a>
-            <a href="">My Knowledges</a>
-            <a href="">My Projects</a>
-            <a href="">Objectifs</a>
-            <a href="">Contact</a>
-        </nav>
+        <button id="light-dark-mode">Dark Mode</button>
+        <div id="h1-nav-light">
+            <h1 class="title-light">My portfolio</h1>
+            <nav>
+                <a href="#about-me" class="a-light">About Me</a>
+                <a href="#knowledges" class="a-light">My Knowledges</a>
+                <a href="#projects" class="a-light">My Projects</a>
+                <a href="#objectifs" class="a-light">Objectifs</a>
+                <a href="#contact" class="a-light">Contact</a>
+            </nav>
+        </div>
     </header>
     <main>
         <section id="about-me">
-            <h2>About Me</h2>
-            <p>I am a trained social worker and have been working in this field since 2015. In July 2024, I decided to build my knowledge in programming and web development. Previously, I completed my first year of network management studies in higher education before choosing a different path. Now, I’m eager to develop web development skills so I can work on side projects alongside my main role, and perhaps even consider a career shift in the future.</p>
+            <h2 class="title-light">About Me</h2>
+            <p class="p-light">I am a trained social worker and have been working in this field since 2015. In July
+                2024, I decided to
+                build my knowledge in programming and web development. Previously, I completed my first year of network
+                management studies in higher education before choosing a different path. Now, I'm eager to develop web
+                development skills so I can work on side projects alongside my main role, and perhaps even consider a
+                career shift in the future.</p>
         </section>
 
         <section id="knowledges">
-            <h2>HTML 5</h2>
-            <p>I started by learning the basics of HTML, the first step in my journey to becoming a web developer. This allowed me to explore, for the first time, the structure of a web page.</p>
+            <h2 class="title-light">HTML 5 & CSS 3</h2>
+            <p class="p-light">I started by learning the basics of HTML, the first step in my journey to becoming a web
+                developer. This
+                allowed me to explore, for the first time, the structure of a web page.</p>
+            <p class="p-light">Next, I learned to use CSS. This allowed me to understand how HTML elements are
+                structured on a web page
+                and also how to optimize the display of information on the page.</p>
+            <h2 class="title-light">JavaScript</h2>
+            <p class="p-light">I then learned to use JavaScript. It required some conceptual and abstract thinking, but
+                persistence and
+                dedication always pay off! JavaScript helped me understand how data is structured using variables and
+                how to interact with HTML elements. It's an incredibly powerful language. I plan to use JavaScript for
+                both front-end and back-end development.</p>
         </section>
-        <section id="projects"></section>
-        <section id="objectifs"></section>
-        <section id="contact"></section>
+
+        <section id="projects">
+            <h2 class="title-light">Projects</h2>
+            <p class="p-light">Empty for now, as I'm still in training.</p>
+        </section>
+
+        <section id="objectifs">
+            <h2 class="title-light">Objectifs</h2>
+            <h3 class="title-light">Full-stack engineer</h3>
+            <p class="p-light">I want to leverage my skills in HTML, CSS, and JavaScript to become a full-stack
+                engineer. Alongside my
+                role as a social worker, I aim to create an additional income stream by offering my new skills to design
+                and manage stylish, user-friendly, and accessible websites for all types of clients from start to
+                finish.</p>
+        </section>
+
+        <section id="contact">
+            <h2 class="title-light">Contact</h2>
+            <p class="p-light">You can contact me by mail</p>
+        </section>
     </main>
     <footer></footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

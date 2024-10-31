@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+header {
+    margin: 0;
+}
+
+#h1-nav-light {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 99%;
+    background-color: #ffe4c4;
+    margin: 0;
+}
+
+#h1-nav-dark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 99%;
+    background-color: #050a2c;
+    margin: 0;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+main {
+    padding-top: 120px;
+}
+
+.title-light {
+    font-family: "Playwrite GB S", cursive;
+    color: black;
+}
+
+.title-dark {
+    font-family: "Playwrite GB S", cursive;
+    color: lightgray;
+}
+
+.p-light {
+    color: black;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.p-dark {
+    color: lightgray;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.a-light {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Mulish', sans-serif;
+    text-decoration: none;
+    margin: 10px
+}
+
+.a-dark {
+    color: lightblue;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Mulish', sans-serif;
+    text-decoration: none;
+    margin: 10px
+}
+
+.a-light:hover {
+    color: burlywood;
+}
+
+.a-dark:hover {
+    color: lightskyblue;
+}
+
+#light-dark-mode {
+    background-color: coral;
+    border-radius: 5px;
+    margin-left: 90%;
+    margin-top: 0;
+    position: fixed;
+    z-index: 6;
+}
+
+#light-dark-mode:active {
+    background-color: chocolate;
+}
