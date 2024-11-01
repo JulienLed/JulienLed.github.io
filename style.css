@@ -13,6 +13,8 @@
     --a-dark: #61dafb;
     --toggle-btn-light: #8ea2b8;
     --toggle-btn-dark: #cedbe9;
+    --mulish: 'Mulish', sans-serif;
+    --playwrite: "Playwrite GB S", cursive
 }
 
 header {
@@ -36,9 +38,10 @@ header {
 #h1-nav-dark {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     position: fixed;
     width:100%;
+    height: 70px;
     background-color: var(--nav-bar-dark);
     margin: 0;
     padding-left: 10px;
@@ -51,7 +54,7 @@ header {
     color: var(--text-light);
     font-size: 16px;
     font-weight: bold;
-    font-family: 'Mulish', sans-serif;
+    font-family: var(--mulish);
     text-decoration: none;
     margin: 10px;
     padding-right: 10px;
@@ -61,7 +64,7 @@ header {
     color: var(--text-dark);
     font-size: 16px;
     font-weight: bold;
-    font-family: 'Mulish', sans-serif;
+    font-family: var(--mulish);
     text-decoration: none;
     margin: 10px;
     padding-right: 10px;
@@ -78,14 +81,21 @@ header {
 #light-dark-mode {
     background-color: var(--toggle-btn-dark);
     border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     margin-left: 90%;
     margin-top: 3px;
     position: fixed;
     z-index: 6;
+    font-family: var(--mulish);
+    font-weight: bold;
 }
 
 #light-dark-mode:active {
     background-color: var(--toggle-btn-light);
+}
+
+#light-dark-mode:hover {
+    background-color: var(--a-dark);
 }
 
 .light {/*body*/
@@ -117,6 +127,7 @@ img {
     flex-grow: 2;
     border-radius: 10px;
     border: 1px solid var(--text-light);
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.3);
 }
 
 .section-div {
@@ -145,28 +156,61 @@ img {
 }
 
 .title-light {
-    font-family: "Playwrite GB S", cursive;
+    font-family: var(--playwrite);
     color: var(--text-light);
-    text-decoration: underline;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+    text-decoration:underline;
 }
 
 .title-dark {
-    font-family: "Playwrite GB S", cursive;
+    font-family: var(--playwrite);
     color: var(--text-dark);
-    text-decoration: underline;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+    text-decoration:underline;
 }
 
 .p-light {
     color: var(--text-light);
     font-size: 16px;
-    font-family: 'Mulish', sans-serif;
+    font-family: var(--mulish);
     padding: 10px;
 }
 
 .p-dark {
     color: var(--text-dark);
     font-size: 16px;
-    font-family: 'Mulish', sans-serif;
+    font-family: var(--mulish);
+    padding: 10px;
+}
+
+#guess-span {
+    font-family: var(--mulish);
+}
+
+#guess-input {
+    width: 40px;
+    height: 30px;
+    font-family: var(--mulish);
+    font-size: 14px;
+}
+
+#guess-button {
+    width: 75px;
+    height: 36px;
+    font-family: var(--mulish);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#guess-number {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     padding: 10px;
 }
 
@@ -182,7 +226,7 @@ footer {
     justify-content: space-around;
     color: black;
     font-size: 16px;
-    font-family: 'Mulish', sans-serif;
+    font-family: var(--mulish);
     font-weight: bolder;
     margin: 0;
     padding: 0;
