@@ -2,6 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 
+:root {
+    --nav-bar-light: #e4e8ec;
+    --nav-bar-dark: #282c34;
+    --background-light: #f8f9fa;
+    --background-dark: #1e1e1e;
+    --text-light: #343a40;
+    --text-dark: #eaeaea;
+    --a-light: #007bff;
+    --a-dark: #61dafb;
+    --toggle-btn-light: #8ea2b8;
+    --toggle-btn-dark: #cedbe9;
+}
+
 header {
     margin: 0;
 }
@@ -9,11 +22,15 @@ header {
 #h1-nav-light {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:flex-end;
     position: fixed;
-    width: 99%;
-    background-color: #ffe4c4;
+    width: 100%;
+    height: 70px;
+    background-color: var(--nav-bar-light);
     margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid var(--text-light)
 }
 
 #h1-nav-dark {
@@ -21,76 +38,152 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    width: 99%;
-    background-color: #050a2c;
+    width:100%;
+    background-color: var(--nav-bar-dark);
     margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid var(--text-light)
 }
 
-body {
-    background-color: blanchedalmond;
-}
-
-main {
-    padding-top: 120px;
-}
-
-.title-light {
-    font-family: "Playwrite GB S", cursive;
-    color: black;
-}
-
-.title-dark {
-    font-family: "Playwrite GB S", cursive;
-    color: lightgray;
-}
-
-.p-light {
-    color: black;
-    font-size: 16px;
-    font-family: 'Mulish', sans-serif;
-}
-
-.p-dark {
-    color: lightgray;
-    font-size: 16px;
-    font-family: 'Mulish', sans-serif;
-}
 
 .a-light {
-    color: black;
+    color: var(--text-light);
     font-size: 16px;
     font-weight: bold;
     font-family: 'Mulish', sans-serif;
     text-decoration: none;
-    margin: 10px
+    margin: 10px;
+    padding-right: 10px;
 }
 
 .a-dark {
-    color: lightblue;
+    color: var(--text-dark);
     font-size: 16px;
     font-weight: bold;
     font-family: 'Mulish', sans-serif;
     text-decoration: none;
-    margin: 10px
+    margin: 10px;
+    padding-right: 10px;
 }
 
 .a-light:hover {
-    color: burlywood;
+    color: var(--a-light);
 }
 
 .a-dark:hover {
-    color: lightskyblue;
+    color: var(--a-dark);
 }
 
 #light-dark-mode {
-    background-color: coral;
+    background-color: var(--toggle-btn-dark);
     border-radius: 5px;
     margin-left: 90%;
-    margin-top: 0;
+    margin-top: 3px;
     position: fixed;
     z-index: 6;
 }
 
 #light-dark-mode:active {
-    background-color: chocolate;
+    background-color: var(--toggle-btn-light);
+}
+
+.light {/*body*/
+    background-color: var(--background-light);
+    width: 100%;
+    margin: 0
+}
+
+.dark {/*body*/
+    background-color: var(--background-dark);
+    width: 100%;
+    margin: 0
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+img {
+    max-width: 150px;
+    max-height: 150px;
+    flex-shrink: 0;
+    flex-grow: 2;
+    border-radius: 10px;
+    border: 1px solid var(--text-light);
+}
+
+.section-div {
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+    gap: 10px;
+}
+
+.section-div-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    margin-left: 13%;
+}
+
+.section-div-2-1 {
+    display: flex;
+    text-align: end;
+}
+
+.section-div-2-2 {
+    display: flex;
+    text-align: start;
+}
+
+.title-light {
+    font-family: "Playwrite GB S", cursive;
+    color: var(--text-light);
+    text-decoration: underline;
+}
+
+.title-dark {
+    font-family: "Playwrite GB S", cursive;
+    color: var(--text-dark);
+    text-decoration: underline;
+}
+
+.p-light {
+    color: var(--text-light);
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    padding: 10px;
+}
+
+.p-dark {
+    color: var(--text-dark);
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    padding: 10px;
+}
+
+footer {
+    border-top: 1px solid black;
+    width: 100%;
+    margin-top: 40px;
+    padding: 0;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
 }
