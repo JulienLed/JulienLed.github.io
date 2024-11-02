@@ -26,7 +26,7 @@
         <section id="about-me">
             <h2 class="title-light">About Me</h2>
             <div class="section-div">
-                <img id="img-me" src="https://pixabay.com/get/g19a1fe056c8e392a66e0f9cee1711a3098e74fedf61ebf1694cea0f8fdea963846ea5e374aa73cd0018c4402f71d6cb2_640.png" alt="image-of-the-author">
+                <img id="img-me" src="./technology-8490011_640.png" alt="image-of-the-author">
             <p class="p-light">I am a trained social worker and have been working in this field since 2015. In July
                 2024, I decided to
                 build my knowledge in programming and web development. Previously, I completed my first year of network
@@ -45,10 +45,10 @@
             <p class="p-light">I started by learning the basics of HTML, the first step in my journey to becoming a web
                 developer. This
                 allowed me to explore, for the first time, the structure of a web page.</p>
-                <img id="img-logo-html" src="https://pixabay.com/get/g9d07bfa8f1248318d2b78315ad744e24cba9f0d481c7b754e06cfa832f54d40baa037c8c83ba2600118ddb8a277cd69a_640.png" alt="html-logo">
+                <img id="img-logo-html" src="./html logo.png" alt="html-logo">
             </div>
             <div class="section-div-2-2">
-                <img id="img-logo-css" src="https://pixabay.com/get/gd07818fdd7d657d8e8276df93b8c6a5997c36fa0a4680c01a4589b701ad0e9d30042272ca64f42f907547d115a9df4d7_640.png" alt="css-logo">
+                <img id="img-logo-css" src="./CSS3_logo_and_wordmark.svg" alt="css-logo">
             <p class="p-light">Next, I learned to use CSS. This allowed me to understand how HTML elements are
                 structured on a web page
                 and also how to optimize the display of information on the page.</p>
@@ -57,7 +57,7 @@
             </div>
             <h3 class="title-light">JavaScript</h2>
                 <div class="section-div">
-                    <img src="https://pixabay.com/get/g648741ad892def1c5444deb822e7561e83b10f6ee0a0244c0869f6dee4a240be6362cf2c7fec26399808c63193bebe73_640.png" alt="img-logo-js">
+                    <img src="./javascript logo.png" alt="img-logo-js">
             <p class="p-light">I then learned to use JavaScript. It required some conceptual and abstract thinking, but
                 persistence and
                 dedication always pay off! JavaScript helped me understand how data is structured using variables and
@@ -70,11 +70,45 @@
             <h2 class="title-light">Projects</h2>
             <div class="section-div">
             <div id="guess-number">
+                <h3 class="title-light">Guess The Number</h3>
                 <p class="p-light" id="guess-score" class="p-light" style="font-weight: bold;">Score: Computer: 0 / User: 0</p>
-                <span id="guess-span"></span>
-                <input id="guess-input" type="number">
+                <span class="p-light" id="guess-span"></span>
+                <label for="guess-input" class="p-light"> Enter a number :</label>
+                <input id="guess-input" type="number" maxlength="1">
+                <br>
                 <button id="guess-button">Guess !</button>
                 
+            </div>
+            <div id="pendu">
+                <h3 class="title-light">Pendu Game</h2>
+                    <p class="p-light">Find the word ! You used : </p>
+                    <p id="used-letters" class="p-light"></p>
+                <div id="drawing">
+                    <table id="pendu">
+                        <tr>
+                          <td id="mat-5" class="pendu-light" style="visibility: hidden">___</td>
+                        <tr>
+                          <td id="mat-4" class="pendu-light" style="visibility: hidden">|</td><td id="corde" class="pendu-light" style="visibility: hidden">|</td>
+                        </tr>
+                        <tr>
+                          <td id="mat-3" class="pendu-light" style="visibility: hidden">|</td><td id="tete" class="pendu-light" style="visibility: hidden"> 0 </td>
+                        </tr>
+                        <tr>
+                          <td id="mat-2" class="pendu-light" style="visibility: hidden">|</td><td id="corps" class="pendu-light" style="visibility: hidden">/|\</td>
+                        </tr>
+                        <tr>
+                          <td id="mat-1" class="pendu-light" style="visibility: hidden">|</td><td id="jambes" class="pendu-light" style="visibility: hidden">/ \</td>
+                        </tr>
+                        <tr>
+                          <td class="pendu-light" colspan="3">--------</td>
+                        </tr>
+                      </table>
+                </div>
+                <span id="mot" class="p-light">Mot : </span>
+                <br />
+                <input id="guess-input-pendu" maxlength="1"/>
+                <br />
+                <button id="guess-button-pendu">Guess !</button>
             </div>
             </div>
         </section>
@@ -88,7 +122,7 @@
                 role as a social worker, I aim to create an additional income stream by offering my new skills to design
                 and manage stylish, user-friendly, and accessible websites for all types of clients from start to
                 finish.</p>
-                <img src="https://pixabay.com/get/g8a719604126ee5fdbe38ca36e5163d525b7089414804fdc56ec3c3f7d03f33be08aaefaf382768ff67ece15b9d5ae240_640.png" alt="img-engineer">
+                <img src="./success.png" alt="img-engineer">
             </div>
         </section>
     </main>

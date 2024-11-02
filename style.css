@@ -183,18 +183,33 @@ img {
     padding: 10px;
 }
 
+.pendu-light {
+    color: var(--text-light);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--mulish);
+}
+
+.pendu-dark {
+    color: var(--text-dark);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--mulish);
+}
+
 #guess-span {
     font-family: var(--mulish);
 }
 
-#guess-input {
+#guess-input, #guess-input-pendu {
     width: 40px;
     height: 30px;
     font-family: var(--mulish);
     font-size: 14px;
+    text-align: center;
 }
 
-#guess-button {
+#guess-button, #guess-button-pendu {
     width: 75px;
     height: 36px;
     font-family: var(--mulish);
@@ -212,6 +227,17 @@ img {
     align-items: center;
     gap: 5px;
     padding: 10px;
+}
+
+#pendu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.3);
+    padding: 10px 50px
 }
 
 footer {
