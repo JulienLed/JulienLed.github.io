@@ -206,3 +206,16 @@ buttonPendu.addEventListener("click", () => {
     resetPendu();
   }
 });
+
+window.addEventListener("keydown", () => {
+  if (event.key === "Enter") {
+    pendu();
+    if (pendingWord.join("") == wordToGuess) {
+      mot.innerHTML = "You win !";
+      setTimeout(() => (buttonPendu.innerHTML = "Retry ?"), 2000);
+    }
+    if (buttonPendu.innerHTML === "Retry ?") {
+      resetPendu();
+    }
+  }
+});
