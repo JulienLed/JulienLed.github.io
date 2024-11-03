@@ -207,7 +207,7 @@ buttonPendu.addEventListener("click", () => {
   }
 });
 
-window.addEventListener("keydown", () => {
+window.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     pendu();
     if (pendingWord.join("") == wordToGuess) {
