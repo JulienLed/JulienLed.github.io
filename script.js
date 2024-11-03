@@ -127,7 +127,7 @@ for (let i = 0; i < wordToGuess.length; i++) {
 }
 
 const pendu = () => {
-  inputPenduLetter = inputPendu.value;
+  inputPenduLetter = inputPendu.value.toLowerCase();
   let indexLetter = [];
   if (!wordToGuess.includes(inputPenduLetter)) {
     pUsedLetter.innerHTML.includes(inputPenduLetter)
